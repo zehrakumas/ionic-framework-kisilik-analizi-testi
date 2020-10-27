@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TestgitPage } from '../testgit/testgit.page';
 
 @Component({
   selector: 'app-home',
@@ -8,5 +9,7 @@ import { Component } from '@angular/core';
 export class HomePage {
 
   constructor() {}
+
+  
 
 }

@@ -1,0 +1,384 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title></ion-title>
+    <!--geri butonu-->
+ <ion-buttons slot="start">
+  <ion-back-button defaultHref="#/" color="red"  text="geri" ></ion-back-button>
+</ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<h1 class="baslik">Karakter Analizi Testi</h1>
+<p></p>
+<ion-card>
+  <ion-card-header>
+    <ion-card-title>Soru 1</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content>
+    Kendinizi ne zaman en iyi hissedersiniz?
+    <ion-list>
+      <ion-item>
+        <ion-checkbox slot="start" value="pepperoni" [(ngModel)]="yanit1" (click)="hesapla()"></ion-checkbox>
+        <ion-label>Sabahları</ion-label>
+      </ion-item>
+
+      <ion-item>
+        
+        <ion-checkbox slot="start" value="sausage" [(ngModel)]="yanit2" (click)="hesapla()"></ion-checkbox>
+        <ion-label>Öğlenden sonra ve akşama doğru</ion-label>
+      </ion-item>
+    
+      <ion-item>
+       
+        <ion-checkbox slot="start" value="mushrooms" [(ngModel)]="yanit3" (click)="hesapla()"></ion-checkbox>
+        <ion-label>Gecenin ilerleyen saatlerinde</ion-label>
+      </ion-item>
+    </ion-list>
+   
+  </ion-card-content>
+</ion-card>
+<!--soru 2-->
+<p></p>
+<ion-card>
+  <ion-card-header>
+    <ion-card-title>Soru 2</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content>
+    Nasıl yürürsünüz?
+    <ion-list>
+      <ion-item>
+        <ion-checkbox slot="start" value="pepperoni" [(ngModel)]="yanit4" (click)="hesapla()"></ion-checkbox>
+        <ion-label>Hızlı ve uzun adımlarla</ion-label> 
+      </ion-item>
+    
+      <ion-item> 
+        <ion-checkbox slot="start" value="sausage" [(ngModel)]="yanit5" (click)="hesapla()"></ion-checkbox>
+        <ion-label>Hızlı ve kısa adımlarla</ion-label>
+      </ion-item>
+    
+      <ion-item>
+        <ion-checkbox slot="start" value="mushrooms" [(ngModel)]="yanit6" (click)="hesapla()"></ion-checkbox>
+        <ion-label>Normalden yavaş ve etrafa bakınarak</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-checkbox slot="start" value="mushrooms" [(ngModel)]="yanit7" (click)="hesapla()"></ion-checkbox>
+        <ion-label>Yavaş ve başı eğik</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-checkbox slot="start" value="mushrooms" [(ngModel)]="yanit8" (click)="hesapla()"></ion-checkbox>
+        <ion-label>Çok yavaş</ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-card-content>
+</ion-card>
+
+<!--soru 3-->
+<p></p>
+<ion-card>
+  <ion-card-header>
+    <ion-card-title>Soru 3</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content>
+    İnsanlarla konuşurken;
+    <ion-list>
+      <ion-item>
+        <ion-checkbox slot="start" value="pepperoni" [(ngModel)]="yanit9" (click)="hesapla()"></ion-checkbox>
+        <ion-label>Kollarımı göğsümde katlamış olarak dururum</ion-label> 
+      </ion-item>
+    
+      <ion-item> 
+        <ion-checkbox slot="start" value="sausage" [(ngModel)]="yanit10" (click)="hesapla()"></ion-checkbox>
+        <ion-label>Ellerimi sıkarım</ion-label>
+      </ion-item>
+    
+      <ion-item>
+        <ion-checkbox slot="start" value="mushrooms" [(ngModel)]="yanit11" (click)="hesapla()"></ion-checkbox>
+        <ion-label>Bir veya iki elimi belime koyarım</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-checkbox slot="start" value="mushrooms" [(ngModel)]="yanit12" (click)="hesapla()"></ion-checkbox>
+        <ion-label>Konuştuğum insanlara dokunur veya ittiririm</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-checkbox slot="start" value="mushrooms" [(ngModel)]="yanit13" (click)="hesapla()"></ion-checkbox>
+        <ion-label>Kulağımla oynar, çeneme dokunur veya saçımı düzeltirim</ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-card-content>
+</ion-card>
+
+
+<!--soru 4-->
+<p></p>
+<ion-card>
+  <ion-card-header>
+    <ion-card-title>Soru 4</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content>
+    Dinlenirken nasıl oturursunuz?
+    <ion-list>
+      <ion-item>
+        <ion-checkbox slot="start" value="pepperoni" [(ngModel)]="yanit14" (click)="hesapla()"></ion-checkbox>
+        <ion-label> Dizler katlanmış ve bacaklar birbirine bitişik olarak</ion-label> 
+      </ion-item>
+    
+      <ion-item> 
+        <ion-checkbox slot="start" value="sausage" [(ngModel)]="yanit15" (click)="hesapla()"></ion-checkbox>
+        <ion-label>Bacaklar çaprazlanmış olarak</ion-label>
+      </ion-item>
+    
+      <ion-item>
+        <ion-checkbox slot="start" value="mushrooms" [(ngModel)]="yanit16" (click)="hesapla()"></ion-checkbox>
+        <ion-label>Bacaklarımı uzatarak</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-checkbox slot="start" value="mushrooms" [(ngModel)]="yanit17" (click)="hesapla()"></ion-checkbox>
+        <ion-label>Bir bacağımı altıma katlayarak</ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-card-content>
+</ion-card>
+
+<!--soru 5-->
+<p></p>
+<ion-card>
+  <ion-card-header>
+    <ion-card-title>Soru 5</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content>
+    Çok hoşunuza giden bir şey olduğunda ne yaparsınız?
+    <ion-list>
+      <ion-item>
+        <ion-checkbox slot="start" value="pepperoni" [(ngModel)]="yanit18" (click)="hesapla()"></ion-checkbox>
+        <ion-label>Büyük bir kahkaha atarım</ion-label> 
+      </ion-item>
+    
+      <ion-item> 
+        <ion-checkbox slot="start" value="sausage" [(ngModel)]="yanit19" (click)="hesapla()"></ion-checkbox>
+        <ion-label>Gülerim ama fazla sesli değil</ion-label>
+      </ion-item>
+    
+      <ion-item>
+        <ion-checkbox slot="start" value="mushrooms" [(ngModel)]="yanit20" (click)="hesapla()"></ion-checkbox>
+        <ion-label>Bir kerelik gülerim</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-checkbox slot="start" value="mushrooms" [(ngModel)]="yanit21" (click)="hesapla()"></ion-checkbox>
+        <ion-label>Sessizce gülümserim</ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-card-content>
+</ion-card>
+
+<!--soru 6-->
+<p></p>
+<ion-card>
+  <ion-card-header>
+    <ion-card-title>Soru 6</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content>
+    Bir partiye veya sosyal etkinliğe katıldığınızda
+    <ion-list>
+      <ion-item>
+        <ion-checkbox slot="start" value="pepperoni" [(ngModel)]="yanit22" (click)="hesapla()"></ion-checkbox>
+        <ion-label>Herkes sizi fark edecek şekilde gürültülü bir giriş mi yaparsınız?</ion-label> 
+      </ion-item>
+    
+      <ion-item> 
+        <ion-checkbox slot="start" value="sausage" [(ngModel)]="yanit23" (click)="hesapla()"></ion-checkbox>
+        <ion-label>Sessiz bir giriş yapıp etrafınızda tanıdığınız birilerine mi bakınırsınız?</ion-label>
+      </ion-item>
+    
+      <ion-item>
+        <ion-checkbox slot="start" value="mushrooms" [(ngModel)]="yanit24" (click)="hesapla()"></ion-checkbox>
+        <ion-label>Çok sessizce girip kimsenin sizi fark etmemesine mi gayret edersiniz?</ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-card-content>
+</ion-card>
+
+<!--soru 7-->
+<p></p>
+<ion-card>
+  <ion-card-header>
+    <ion-card-title>Soru 7</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content>
+    Çok zor bir işe dikkatinizi vermişken rahatsız ediliyorsunuz. Ne yaparsınız?
+    <ion-list>
+      <ion-item>
+        <ion-checkbox slot="start" value="pepperoni" [(ngModel)]="yanit25" (click)="hesapla()"></ion-checkbox>
+        <ion-label>Bölünmeyi memnuniyetle karşılarım</ion-label> 
+      </ion-item>
+    
+      <ion-item> 
+        <ion-checkbox slot="start" value="sausage" [(ngModel)]="yanit26" (click)="hesapla()"></ion-checkbox>
+        <ion-label>Aşırı derecede rahatsız olurum</ion-label>
+      </ion-item>
+    
+      <ion-item>
+        <ion-checkbox slot="start" value="mushrooms" [(ngModel)]="yanit27" (click)="hesapla()"></ion-checkbox>
+        <ion-label>Belli olmaz.Bu iki uç arasında değişken davranışlar gösteririm</ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-card-content>
+</ion-card>
+
+
+<!--soru 8-->
+<p></p>
+<ion-card>
+  <ion-card-header>
+    <ion-card-title>Soru 8</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content>
+    En çok hangi rengi seversiniz?
+    <ion-list>
+      <ion-item>
+        <ion-checkbox slot="start" value="pepperoni" [(ngModel)]="yanit28" (click)="hesapla()"></ion-checkbox>
+        <ion-label>Kırmızı veya portakal rengi</ion-label> 
+      </ion-item>
+    
+      <ion-item> 
+        <ion-checkbox slot="start" value="sausage" [(ngModel)]="yanit29" (click)="hesapla()"></ion-checkbox>
+        <ion-label>Siyah</ion-label>
+      </ion-item>
+    
+      <ion-item>
+        <ion-checkbox slot="start" value="mushrooms" [(ngModel)]="yanit30" (click)="hesapla()"></ion-checkbox>
+        <ion-label>Sarı veya mavi</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-checkbox slot="start" value="mushrooms" [(ngModel)]="yanit31" (click)="hesapla()"></ion-checkbox>
+        <ion-label>Yeşil</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-checkbox slot="start" value="mushrooms" [(ngModel)]="yanit32" (click)="hesapla()"></ion-checkbox>
+        <ion-label>Koyu mavi veya mor</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-checkbox slot="start" value="mushrooms" [(ngModel)]="yanit33" (click)="hesapla()"></ion-checkbox>
+        <ion-label>Beyaz</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-checkbox slot="start" value="mushrooms" [(ngModel)]="yanit34" (click)="hesapla()"></ion-checkbox>
+        <ion-label>Kahverengi veya gri</ion-label>
+      </ion-item>
+
+    </ion-list>
+  </ion-card-content>
+</ion-card>
+
+
+<!--soru 9-->
+<p></p>
+<ion-card>
+  <ion-card-header>
+    <ion-card-title>Soru 9</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content>
+    Yatakta uyumadan önceki birkaç dakikada;
+    <ion-list>
+      <ion-item>
+        <ion-checkbox slot="start" value="pepperoni" [(ngModel)]="yanit35" (click)="hesapla()"></ion-checkbox>
+        <ion-label>Sırt üstü yatıp uzanırsınız</ion-label> 
+      </ion-item>
+    
+      <ion-item> 
+        <ion-checkbox slot="start" value="sausage" [(ngModel)]="yanit36" (click)="hesapla()"></ion-checkbox>
+        <ion-label>Karnınızın üstüne yatıp uzanırsınız</ion-label>
+      </ion-item>
+    
+      <ion-item>
+        <ion-checkbox slot="start" value="mushrooms" [(ngModel)]="yanit37" (click)="hesapla()"></ion-checkbox>
+        <ion-label>Hafif kıvrılmış olarak yan tarafınıza yatarsınız</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-checkbox slot="start" value="mushrooms" [(ngModel)]="yanit38" (click)="hesapla()"></ion-checkbox>
+        <ion-label>Başınızı bir kolunuzun üzerine koyarsınız</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-checkbox slot="start" value="mushrooms" [(ngModel)]="yanit39" (click)="hesapla()"></ion-checkbox>
+        <ion-label>Başınızı yorganın altına kapatırsınız</ion-label>
+      </ion-item>
+
+    </ion-list>
+  </ion-card-content>
+</ion-card>
+
+<!--soru 10-->
+<p></p>
+<ion-card>
+  <ion-card-header>
+    <ion-card-title>Soru 10</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content>
+    Rüyanızda genellikle;
+    <ion-list>
+      <ion-item>
+        <ion-checkbox slot="start" value="pepperoni" [(ngModel)]="yanit40" (click)="hesapla()"></ion-checkbox>
+        <ion-label>Düşersiniz</ion-label> 
+      </ion-item>
+    
+      <ion-item> 
+        <ion-checkbox slot="start" value="sausage" [(ngModel)]="yanit41" (click)="hesapla()"></ion-checkbox>
+        <ion-label>Kavga eder veya tartışırsınız</ion-label>
+      </ion-item>
+    
+      <ion-item>
+        <ion-checkbox slot="start" value="mushrooms" [(ngModel)]="yanit42" (click)="hesapla()"></ion-checkbox>
+        <ion-label>Birilerini veya bir şeyler ararsınız</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-checkbox slot="start" value="mushrooms" [(ngModel)]="yanit43" (click)="hesapla()"></ion-checkbox>
+        <ion-label>Uçar veya yüzersiniz</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-checkbox slot="start" value="mushrooms" [(ngModel)]="yanit44" (click)="hesapla()"></ion-checkbox>
+        <ion-label>Genelde rüya görmezsiniz</ion-label>
+      </ion-item>
+
+
+      <ion-item>
+        <ion-checkbox slot="start" value="mushrooms" [(ngModel)]="yanit45" (click)="hesapla()"></ion-checkbox>
+        <ion-label>Rüyalarınız daima hoştur</ion-label>
+      </ion-item>
+
+    </ion-list>
+  </ion-card-content>
+</ion-card>
+
+
+<ion-button (click)="yazdir()" class="buton">Hesapla</ion-button>
+<p *ngIf="sart==1" class="yazi1">31 – 40 PUAN: İnsanlar sizi mantıklı, ihtiyatlı, dikkatli ve pratik birisi olarak görürler. Sizi zeki, yetenekli ve hünerli ama alçak gönüllü olarak tanırlar. Çok hızlı arkadaşlık kurmayan, ama arkadaşlarına karşı çok sadık olan ve onlardan da aynı şeyi bekleyen birisiniz.</p>
+<p *ngIf="sart==2" class="yazi2">41 – 50 PUAN: İnsanlar sizi taze, canlı, çekici, eğlendirici, pratik ve daima ilginç birisi olarak görürler; her zaman ilgi odağı olan ama çok aşırıya kaçmayacak kadar da dengeli birisi.. İnsanlar sizi ayrıca iyiliksever, düşünceli, anlayışlı ve kendilerini neşelendiren ve rahatlatan birisi olarak tanırlar.</p>
+<p *ngIf="sart==3" class="yazi3">51 – 60 PUAN: insanlar sizi heyecan verici, havai, düşüncesiz yapıda, doğal liderlik özellikleri olan, her zaman doğru olmasa da hızlı karar veren birisi olarak tanırlar. Seni cesur, maceraperest birisi olarak tanırlar; her şeyi bir kez denemek isteyen, macera yaşamak için fırsatları kaçırmayan birisi.. Yaydığınız heyecandan dolayı insanlar sizinle aynı iş yerinde yaşamaktan zevk alırlar.</p>
+<p *ngIf="sart==4" class="yazi4">60 PUAN VE ÜZERİ: İnsanlar sana kırılgan bir eşya muamelesi yapıyorlar. Kibirli, bencil ve aşırı baskın birisi olarak görülüyorsun. İnsanlar size hayranlık duyup sizin gibi olmak isteyebilirler ama size her zaman güvenmezler ve sizinle çok yakın ilişkide olmaktan kaçınırlar.</p>
+
+
+</ion-content>

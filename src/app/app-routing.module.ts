@@ -11,6 +11,10 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'testgit',
+    loadChildren: () => import('./testgit/testgit.module').then( m => m.TestgitPageModule)
+  },
 ];
 
 @NgModule({
